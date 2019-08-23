@@ -3,7 +3,7 @@
   <button type="button" @click="isshowcascader = !isshowcascader">隐藏or展示</button>	 
   <!-- 获取用户选择的数据 -->
   <div v-if="isshowcascader">
-	  <Cascader :options.sync="options" v-model="value" :lazyload="lazyload"></Cascader>
+	  <Cascader :options.sync="options"  v-model="value" :lazyload="lazyload"></Cascader>
   </div>
   
  </div>

@@ -24,7 +24,7 @@ export default { // 指令是一个方法  指令有自己的生命周期
       };
       document.addEventListener('click', el.listener);
     },
-    unbind(el) {
+    unbind(el) {      //组件销毁时删除监听函数
 	  console.log("组件unbind")	
       document.removeEventListener('click', el.listener);
     },
